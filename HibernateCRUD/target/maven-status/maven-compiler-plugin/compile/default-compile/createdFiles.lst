@@ -1,0 +1,3 @@
+hibernate\bean\EmployeeEntity.class
+hibernate\test\TestHibernate.class
+hibernate\connection\HibernateUtil.class
