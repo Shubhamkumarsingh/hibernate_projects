@@ -12,7 +12,7 @@ public class TestHibernate {
 		Transaction tx= session.getTransaction();
 		tx.begin();
 		EmployeeEntity employeeEntity= new EmployeeEntity();
-		employeeEntity.setEmpName("Rayu");
+		employeeEntity.setEmpName("Nony");
 		employeeEntity.setEmpSalary(120000);
 		session.save(employeeEntity);
 		tx.commit();

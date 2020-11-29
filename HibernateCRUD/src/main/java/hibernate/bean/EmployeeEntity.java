@@ -1,5 +1,7 @@
 package hibernate.bean;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,7 +14,11 @@ import javax.persistence.UniqueConstraint;
 		@UniqueConstraint(columnNames = "id"),
 		@UniqueConstraint(columnNames = "name")
 })
-public class EmployeeEntity {
+public class EmployeeEntity implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2719414309922648413L;
 	@Id
 	@GeneratedValue
 	@Column(name = "id",unique = true, nullable = false)
